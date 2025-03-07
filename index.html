@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Business Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 320px;
+            animation: fadeIn 1s ease-in-out;
+            color: white;
+        }
+        .card img {
+            width: 150px;
+            border-radius: 10%;
+            border: none;
+            animation: popIn 1s ease-in-out;
+        }
+        .card h2 {
+            margin: 10px 0;
+        }
+        .card p {
+            color: #f0f0f0;
+        }
+        .social-links a {
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            transition: transform 0.3s, color 0.3s;
+            display: inline-flex;
+            align-items: center;
+        }
+        .social-links a img {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+            background: none;
+            border-radius: 0;
+        }
+        .social-links a:hover {
+            transform: scale(1.2);
+            color: #ffeb3b;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.5); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://assets.onecompiler.app/436mej4wy/43b4gdmhs/24210990899.jpeg" alt="Profile Picture">
+        <h2>Aayush Patil</h2>
+        <p>Student</p>
+        <p>N.I.T. Kolhapur</p>
+        <p>Email: aayushp9639@gmail.com</p>
+        <p>Phone: +91 9226545776</p>
+        <div class="social-links">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"> LinkedIn</a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png" alt="X"> X</a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"> Instagram</a>
+        </div>
+    </div>
+</body>
+</html>
